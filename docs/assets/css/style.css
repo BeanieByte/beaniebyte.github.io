@@ -1,10 +1,15 @@
+:root {
+    
+}
+
 
 html {
-    background-color: lightblue;
+    background-color: #131E29;
 }
 
 body {
     font-family: 'Inter', Verdana, sans-serif;
+    color: #fafafa;
 }
 
 a {
@@ -15,6 +20,7 @@ a {
     font-family: 'Font Awesome 5 Brands', 'Font Awesome';
     font-weight: 900;
     font-style: normal;
+    color: #fafafa;
 }
 
 li {
