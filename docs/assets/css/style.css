@@ -10,7 +10,7 @@ a {
 .socialmedia i {
     font-family: 'Font Awesome 5 Brands', 'Font Awesome';
     font-weight: 900;
-    font-style: none;
+    font-style: normal;
 }
 
 li {
@@ -21,6 +21,7 @@ ul {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
+    display: inline;
 }
 
 .portrait {
