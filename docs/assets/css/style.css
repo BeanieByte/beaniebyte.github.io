@@ -3,6 +3,10 @@ html {
     background-color: lightblue;
 }
 
+body {
+    font-family: 'Inter', Verdana, sans-serif;
+}
+
 a {
     text-decoration: none;
 }
