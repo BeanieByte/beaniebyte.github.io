@@ -3,6 +3,9 @@ html {
     background-color: lightblue;
 }
 
+a {
+    text-decoration: none;
+}
 
 .fa-brands i {
     font-family: 'Font Awesome 5 Brands', 'Font Awesome';
