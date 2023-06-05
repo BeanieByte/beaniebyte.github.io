@@ -2,6 +2,7 @@
     --main-bg-color: #100b18;
     --font-color: #e4e3e6;
     --link-color: #e49fb6;
+    --hover-color: #7d9e6d;
 
 }
 
@@ -9,6 +10,7 @@
 html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
+    transition: 0.3s;
 }
 
 body {
@@ -23,6 +25,14 @@ body {
 a {
     text-decoration: none;
     color: var(--link-color);
+    -webkit-transition: .15s ease-in;
+    -moz-transition: .15s ease-in;
+    -o-transition: .15s ease-in;
+    transition: .15s ease-in;
+}
+
+a:hover {
+    color: var(--hover-color);
 }
 
 .socialmedia i {
@@ -30,6 +40,7 @@ a {
     font-weight: 900;
     font-style: normal;
     color: var(--link-color);
+    font-size: 2.4em;
 }
 
 li {
