@@ -1,39 +1,50 @@
 :root {
-    
+    --main-bg-color: #100b18;
+    --font-color: #e4e3e6;
+    --link-color: #e49fb6;
+
 }
 
 
 html {
-    background-color: #131E29;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
+    background-color: var(--main-bg-color);
+    background-image: url("../images/bodybg.png");
+    background-repeat: repeat;
     font-family: 'Inter', Arial, sans-serif;
-    color: #fafafa;
+    color: var(--font-color);
+    margin: 0;
 }
 
 a {
     text-decoration: none;
+    color: var(--link-color);
 }
 
 .socialmedia i {
     font-family: 'Font Awesome 5 Brands', 'Font Awesome';
     font-weight: 900;
     font-style: normal;
-    color: #fafafa;
+    color: var(--link-color);
 }
 
 li {
     list-style-type: none;
+    display: inline;
 }
 
 ul {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
-    display: inline;
 }
 
 .portrait {
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
