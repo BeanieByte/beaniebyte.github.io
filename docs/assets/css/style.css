@@ -4,11 +4,12 @@ html {
 }
 
 
-.fa-brands fa-github, i {
+.fa-brands i {
     font-family: 'Font Awesome 5 Brands', 'Font Awesome';
     font-weight: 900;
+    font-style: none;
 }
 
 li {
-    list-style: none;
+    list-style-type: none;
 }
