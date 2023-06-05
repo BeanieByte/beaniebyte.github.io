@@ -1,0 +1,29 @@
+
+html {
+    background-color: lightblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.socialmedia i {
+    font-family: 'Font Awesome 5 Brands', 'Font Awesome';
+    font-weight: 900;
+    font-style: normal;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: inline;
+}
+
+.portrait {
+    border-radius: 50%;
+}
