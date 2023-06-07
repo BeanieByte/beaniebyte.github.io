@@ -42,11 +42,13 @@ header {
     justify-content: space-around;
 }
 
+/* logo */
+
 .logo {
 fill: var(--font-body-color);
 width: 40px;
 height: 40px;
-opacity: 0.4;
+opacity: 0.5;
 padding: 1rem;
 -webkit-transition: .4s ease;
 -moz-transition: .4s ease;
