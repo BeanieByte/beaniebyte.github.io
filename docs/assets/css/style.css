@@ -1,8 +1,8 @@
 :root {
-    --bg-color: rgb(44, 44, 63);
-    --bg-color2: rgb(45, 68, 78);
-    --font-title-color: #dfe1e6;
-    --font-body-color: #c8cace;
+    --bg-color: rgb(45, 44, 63);
+    --bg-color2: rgb(45, 63, 78);
+    --font-title-color: #e7eaf1;
+    --font-body-color: #bbbfc5;
     --link-color: #e49fb6;
     --hover-color: #63b0b6;
 }
@@ -32,9 +32,10 @@ body {
 }
 
 header {
+    background-color: var(--bg-color);
     width: 100vw;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 header i {
@@ -42,8 +43,7 @@ header i {
     font-weight: 900;
     font-style: normal;
     color: var(--font-body-color);
-    font-size: 2em;
-    align-self: flex-end;
+    font-size: 2.3em;
 }
 
 nav {
@@ -54,8 +54,9 @@ nav {
 
 
 h1 {
+    font-family: 'Noto Sans Mono', monospace;
     font-size: 4em;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--font-title-color);
     margin-block-start: 0.1em;
     margin-block-end: 0.1em;
