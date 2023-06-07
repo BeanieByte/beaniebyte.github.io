@@ -1,10 +1,10 @@
 :root {
     --bg-color: rgb(47, 44, 63);
-    --bg-color2: rgb(83, 40, 52);
-    --font-color: #e4e3e6;
+    --bg-color2: rgb(78, 45, 54);
+    --font-title-color: #e6dfe1;
+    --font-body-color: #cec8c9;
     --link-color: #e49fb6;
     --hover-color: #7d9e6d;
-    --socialmedia-color: #e4e3e6;
 }
 
 
@@ -15,35 +15,71 @@ html {
     width: 100vw;
 }
 
+::selection {
+    color: var(--font-body-color);
+    background: var(--bg-color);
+}
+
 body {
     background-image: url("../images/bodybg.png"), radial-gradient(circle, var(--bg-color2) 0%, var(--bg-color) 100%);
-    background-color: rgb(47, 44, 63);
+    background-color: var(--bg-color);
     background-repeat: repeat;
     font-family: 'Inter', Arial, sans-serif;
-    font-weight: 300;
-    color: var(--font-color);
+    font-weight: 400;
+    color: var(--font-body-color);
     margin: 0;
     
 }
 
+header {
+    width: 100vw;
+    display:flex;
+    justify-content: space-between;
+}
+
+header i {
+    font-family: 'Font Awesome 5 Brands', 'Font Awesome';
+    font-weight: 900;
+    font-style: normal;
+    color: var(--font-body-color);
+    font-size: 2em;
+    align-self: flex-end;
+}
+
+nav {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+
+
 h1 {
     font-size: 4em;
     font-weight: 800;
+    color: var(--font-title-color);
     margin-block-start: 0.1em;
     margin-block-end: 0.1em;
 }
 
 .all {
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-}
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    }
 
-nav {
-    align-self: flex-end;
+@keyframes fadeInAnimation {
+0% {
+    opacity: 0;
 }
-
+100% {
+    opacity: 1;
+ }
+}
 
 
 /* links */
@@ -51,10 +87,10 @@ nav {
 a {
     text-decoration: none;
     color: var(--link-color);
-    -webkit-transition: .15s ease-in;
-    -moz-transition: .15s ease-in;
-    -o-transition: .15s ease-in;
-    transition: .15s ease-in;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
 }
 
 a:hover {
@@ -75,7 +111,7 @@ a:hover {
     font-family: 'Font Awesome 5 Brands', 'Font Awesome';
     font-weight: 900;
     font-style: normal;
-    color: var(--socialmedia-color);
+    color: var(--font-body-color);
     font-size: 2em;
 }
 
@@ -92,12 +128,7 @@ ul {
     padding-left: 0;
 }
 
-/* portrait photo */
 
-.portrait {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    opacity: 0.8;
-    display: none;
+footer {
+    justify-self: flex-end;
 }
