@@ -1,8 +1,8 @@
 :root {
-    --bg-color: rgb(47, 44, 63);
-    --bg-color2: rgb(78, 45, 54);
-    --font-title-color: #e6dfe1;
-    --font-body-color: #cec8c9;
+    --bg-color: rgb(44, 44, 63);
+    --bg-color2: rgb(45, 68, 78);
+    --font-title-color: #dfe1e6;
+    --font-body-color: #c8cace;
     --link-color: #e49fb6;
     --hover-color: #7d9e6d;
 }
@@ -67,7 +67,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    animation: fadeInAnimation ease 2s;
+    animation: fadeInAnimation ease 1.8s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     }
@@ -86,7 +86,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: var(--link-color);
+    color: var(--font-body-color);
     -webkit-transition: .4s ease;
     -moz-transition: .4s ease;
     -o-transition: .4s ease;
