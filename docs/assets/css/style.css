@@ -1,10 +1,12 @@
 :root {
     --bg-color: rgb(45, 44, 63);
     --bg-color2: rgb(45, 63, 78);
+    --bg-color-header: rgba(45, 44, 63, 0.5);
     --font-title-color: #e7eaf1;
     --font-body-color: #bbbfc5;
     --link-color: #e49fb6;
     --hover-color: #63b0b6;
+    --font-footer-color: #828291;
 }
 
 
@@ -32,22 +34,22 @@ body {
 }
 
 header {
-    background-color: var(--bg-color);
+    background-color: var(--bg-color-header);
     width: 100vw;
     display:flex;
     justify-content: space-around;
 }
 
-header i {
-    font-family: 'Font Awesome 5 Brands', 'Font Awesome';
-    font-weight: 900;
-    font-style: normal;
-    color: var(--font-body-color);
-    font-size: 2.3em;
+.logo {
+fill: var(--font-body-color);
+width: 40px;
+height: 40px;
+opacity: 0.8;
+padding: 1rem;
 }
 
 nav {
-    align-self: flex-end;
+    align-self: center;
     justify-self: flex-end;
 }
 
@@ -141,4 +143,6 @@ ul {
 
 footer {
     justify-self: flex-end;
+    color: var(--font-footer-color);
+    font-size: 0.9em;
 }
