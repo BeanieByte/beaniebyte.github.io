@@ -1,12 +1,13 @@
 :root {
     --bg-color: rgb(45, 44, 63);
-    --bg-color2: rgb(45, 63, 78);
+    --bg-color2: #2d3f4e;
     --bg-color-header: rgba(45, 44, 63, 0.5);
     --font-title-color: #e7eaf1;
     --font-body-color: #bbbfc5;
     --link-color: #e49fb6;
     --hover-color: #63b0b6;
     --font-footer-color: #828291;
+    --bg-menu-links: rgba(231, 234, 241, 0.15);
 }
 
 
@@ -44,8 +45,16 @@ header {
 fill: var(--font-body-color);
 width: 40px;
 height: 40px;
-opacity: 0.8;
+opacity: 0.4;
 padding: 1rem;
+-webkit-transition: .4s ease;
+-moz-transition: .4s ease;
+-o-transition: .4s ease;
+transition: .4s ease;
+}
+
+.logo:hover {
+    opacity: 0.8;
 }
 
 nav {
@@ -62,6 +71,10 @@ h1 {
     color: var(--font-title-color);
     margin-block-start: 0.1em;
     margin-block-end: 0.1em;
+}
+
+main {
+    margin: 3em;
 }
 
 .all {
@@ -132,6 +145,14 @@ a:hover {
 li {
     list-style-type: none;
     display: inline;
+
+}
+
+nav li {
+    background: var(--bg-menu-links);
+    border-radius: 12px;
+    padding: .5em 1.4em .5em 1.4em;;
+    margin-right: 1em;
 }
 
 ul {
