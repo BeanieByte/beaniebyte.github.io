@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    background-image: url("../images/bodybg.png"), linear-gradient(to bottom, var(--bg-color2) 0%, var(--bg-color) 100%);
+    background-image: url("images/bodybg.png"), linear-gradient(to bottom, var(--bg-color2) 0%, var(--bg-color) 100%);
     background-color: var(--bg-color);
     background-repeat: repeat;
     font-family: 'Inter', Arial, sans-serif;
@@ -84,11 +84,11 @@ main {
 @keyframes fadeInAnimation {
 0% {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(30%);
 }
 100% {
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateY(-30%);
  }
 }
 
@@ -99,7 +99,7 @@ main {
     align-items: center;
     flex-direction: column;
 
-    }
+}
 
 
 
