@@ -4,7 +4,7 @@
     --font-title-color: #dfe1e6;
     --font-body-color: #c8cace;
     --link-color: #e49fb6;
-    --hover-color: #7d9e6d;
+    --hover-color: #63b0b6;
 }
 
 
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    background-image: url("../images/bodybg.png"), radial-gradient(circle, var(--bg-color2) 0%, var(--bg-color) 100%);
+    background-image: url("../images/bodybg.png"), linear-gradient(to bottom, var(--bg-color2) 0%, var(--bg-color) 100%);
     background-color: var(--bg-color);
     background-repeat: repeat;
     font-family: 'Inter', Arial, sans-serif;
@@ -113,6 +113,15 @@ a:hover {
     font-style: normal;
     color: var(--font-body-color);
     font-size: 2em;
+    opacity: 0.7;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.socialmedia i:hover {
+    opacity: 1;
 }
 
 /* menu/links */
