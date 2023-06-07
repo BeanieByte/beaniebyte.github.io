@@ -125,7 +125,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: .8em;
+    gap: 1em;
 
 }
 
