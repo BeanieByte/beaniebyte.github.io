@@ -76,7 +76,7 @@ h1 {
 
 main {
     margin: 4em;
-    animation: fadeInAnimation ease 1.8s;
+    animation: fadeInAnimation ease 1.6s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -84,9 +84,11 @@ main {
 @keyframes fadeInAnimation {
 0% {
     opacity: 0;
+    transform: translateY(100%);
 }
 100% {
     opacity: 1;
+    transform: translateY(0%);
  }
 }
 
