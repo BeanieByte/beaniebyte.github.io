@@ -6,7 +6,7 @@
     --font-body-color: #bbbfc5;
     --link-color: #e49fb6;
     --hover-color: #d0e1e6;
-    --font-footer-color: #828291;
+    --font-footer-color: #6c6c7e;
     --bg-menu-link: rgba(231, 234, 241, 0.15);
     --bg-menu-hover: rgba(231, 234, 241, 0.3);
     --portrait-shadow: rgba(24, 23, 32, 0.2);
@@ -192,7 +192,8 @@ ul {
 footer {
     justify-self: flex-end;
     color: var(--font-footer-color);
-    font-size: 0.9em;
+    font-size: 0.7em;
+    font-weight: 600;
 }
 
 .portrait {
