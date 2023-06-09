@@ -39,7 +39,7 @@ body {
 }
 
 header {
-    border-bottom: 1px solid  var(--bg-menu-link);
+    border-bottom: 0px solid  var(--bg-menu-link);
     width: 100vw;
     display:flex;
     justify-content: space-around;
