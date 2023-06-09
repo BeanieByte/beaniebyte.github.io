@@ -32,7 +32,7 @@ body {
     background-color: var(--bg-color);
     background-repeat: repeat;
     font-family: 'Inter', Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--font-body-color);
     margin: 0;
     
