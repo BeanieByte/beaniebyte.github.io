@@ -161,12 +161,12 @@ a:hover {
 li {
     list-style-type: none;
     display: inline;
-
+    font-weight: 700;
 }
 
 nav li a {
     background: var(--bg-menu-link);
-    border-radius: 12px;
+    border-radius: 10px;
     padding: .55em 1.4em .55em 1.4em;;
     margin-right: 1em;
 
