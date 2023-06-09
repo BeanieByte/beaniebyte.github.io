@@ -8,7 +8,7 @@
     --hover-color: #d0e1e6;
     --font-footer-color: #6c6c7e;
     --bg-menu-link: rgba(231, 234, 241, 0.15);
-    --bg-menu-hover: rgba(231, 234, 241, 0.3);
+    --bg-menu-hover: rgba(231, 234, 241, 0.7);
     --portrait-shadow: rgba(24, 23, 32, 0.2);
     --selection-bg: rgba(143, 238, 255, 0.7);
     --selection-text: #2d2c3f;
@@ -43,13 +43,13 @@ header {
     width: 100vw;
     display:flex;
     justify-content: space-around;
-    height: 5em;
+    height: 7em;
 }
 
 /* logo */
 
 .logo {
-    align-self: center;
+    align-self: flex-end;;
     justify-self: flex-end;
 }
 
@@ -71,7 +71,7 @@ transition: .4s ease;
 }
 
 nav {
-    align-self: center;
+    align-self: flex-end;
     justify-self: flex-end;
 }
 
@@ -142,6 +142,7 @@ a:hover {
 .socialmedia i {
     font-family: 'Font Awesome 5 Brands', 'Font Awesome';
     font-style: normal;
+    font-weight: 400;
     color: var(--font-title-color);
     font-size: 2em;
     opacity: 0.5;
@@ -174,10 +175,12 @@ nav li a {
 
 nav li a:hover {
     background: var(--bg-menu-hover);
-    transition: .4s ease;
-    -moz-transition: .4s ease;
-    -webkit-transition: .4s ease;
-    -o-transition: .4s ease;
+    color: var(--bg-color2);
+    transition: .3s ease;
+    -moz-transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    box-shadow: 8px 8px 0 -0 var(--portrait-shadow);
     
 }
 
