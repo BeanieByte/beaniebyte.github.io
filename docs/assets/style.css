@@ -1,14 +1,17 @@
 :root {
-    --bg-color: rgb(45, 44, 63);
+    --bg-color: #2d2c3f;
     --bg-color2: #2d3f4e;
     --bg-color-header: rgba(45, 44, 63, 0.4);
     --font-title-color: #e7eaf1;
     --font-body-color: #bbbfc5;
     --link-color: #e49fb6;
     --hover-color: #d0e1e6;
-    --font-footer-color: #828291;
+    --font-footer-color: #6c6c7e;
     --bg-menu-link: rgba(231, 234, 241, 0.15);
-    --bg-menu-hover: rgba(231, 234, 241, 0.3);
+    --bg-menu-hover: rgba(231, 234, 241, 0.7);
+    --portrait-shadow: rgba(24, 23, 32, 0.2);
+    --selection-bg: rgba(143, 238, 255, 0.7);
+    --selection-text: #2d2c3f;
 }
 
 
@@ -20,8 +23,8 @@ html {
 }
 
 ::selection {
-    color: var(--font-body-color);
-    background: var(--bg-color);
+    color: var(--selection-text);
+    background: var(--selection-bg);
 }
 
 body {
@@ -29,39 +32,46 @@ body {
     background-color: var(--bg-color);
     background-repeat: repeat;
     font-family: 'Inter', Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--font-body-color);
     margin: 0;
     
 }
 
 header {
-    border-bottom: 1px solid  var(--bg-menu-link);
+    border-bottom: 0px solid  var(--bg-menu-link);
     width: 100vw;
     display:flex;
     justify-content: space-around;
+    height: 7em;
 }
 
 /* logo */
 
 .logo {
-fill: var(--font-body-color);
-width: 40px;
-height: 40px;
+    align-self: flex-end;;
+    justify-self: flex-end;
+}
+
+.logo img {
+align-self: center;
+justify-self: center;
+width: 2.8em;
+height: 2.8em;
 opacity: 0.5;
-padding: 1rem;
+border-radius: 5px;
 -webkit-transition: .4s ease;
 -moz-transition: .4s ease;
 -o-transition: .4s ease;
 transition: .4s ease;
 }
 
-.logo:hover {
+.logo img:hover {
     opacity: 0.8;
 }
 
 nav {
-    align-self: center;
+    align-self: flex-end;
     justify-self: flex-end;
 }
 
@@ -77,7 +87,7 @@ h1 {
 }
 
 main {
-    margin: 4em;
+    margin: -8em 4em 0em 4em;
     animation: fadeInAnimation ease 1.6s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -86,11 +96,11 @@ main {
 @keyframes fadeInAnimation {
 0% {
     opacity: 0;
-    transform: translateY(30%);
+    transform: translateY(20%);
 }
 100% {
     opacity: 1;
-    transform: translateY(-30%);
+    transform: translateY(0%);
  }
 }
 
@@ -102,8 +112,6 @@ main {
     flex-direction: column;
 
 }
-
-
 
 
 /* links */
@@ -134,17 +142,19 @@ a:hover {
 .socialmedia i {
     font-family: 'Font Awesome 5 Brands', 'Font Awesome';
     font-style: normal;
-    color: var(--font-body-color);
+    font-weight: 400;
+    color: var(--font-title-color);
     font-size: 2em;
-    opacity: 0.7;
-    -webkit-transition: .3s ease;
-    -moz-transition: .3s ease;
-    -o-transition: .3s ease;
+    opacity: 0.5;
     transition: .3s ease;
+    -moz-transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    
 }
 
 .socialmedia i:hover {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 /* menu/links */
@@ -152,12 +162,12 @@ a:hover {
 li {
     list-style-type: none;
     display: inline;
-
+    font-weight: 600;
 }
 
 nav li a {
     background: var(--bg-menu-link);
-    border-radius: 12px;
+    border-radius: 10px;
     padding: .55em 1.4em .55em 1.4em;;
     margin-right: 1em;
 
@@ -165,10 +175,13 @@ nav li a {
 
 nav li a:hover {
     background: var(--bg-menu-hover);
-    -webkit-transition: .4s ease;
-    -moz-transition: .4s ease;
-    -o-transition: .4s ease;
-    transition: .4s ease;
+    color: var(--bg-color2);
+    transition: .3s ease;
+    -moz-transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    box-shadow: 8px 8px 0 -0 var(--portrait-shadow);
+    
 }
 
 
@@ -182,5 +195,29 @@ ul {
 footer {
     justify-self: flex-end;
     color: var(--font-footer-color);
-    font-size: 0.9em;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.portrait {
+    border-radius: 14px;
+    width: 10em;
+    height: 10em;
+    box-shadow: 11px 11px 0 -0 var(--portrait-shadow);
+    transition: transform .4s;
+    -moz-transition: transform .4s;
+    -webkit-transition: transform .4s;
+    -o-transition: transform .4s;
+}
+
+.portrait:hover {
+    transition: transform .4s;
+    -moz-transition: transform .4s;
+    -webkit-transition: transform .4s;
+    -o-transition: transform .4s;
+    
+    transform: translateY(-8%);
+    -moz-transform: translateY(-8%);
+    -webkit-transform: translateY(-8%);
+    -o-transform: translateY(-8%);
 }
