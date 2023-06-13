@@ -87,6 +87,7 @@ h1 {
 }
 
 main {
+    max-width: 1300px;
     margin: -8em 4em 0em 4em;
     animation: fadeInAnimation ease 1.6s;
     animation-iteration-count: 1;
