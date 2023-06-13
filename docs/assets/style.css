@@ -198,6 +198,27 @@ footer {
     color: var(--font-footer-color);
     font-size: 0.7em;
     font-weight: 600;
+    vertical-align: middle;
+}
+
+
+footer li {
+    margin-right: .35em;
+    vertical-align: middle;
+}
+
+footer i {
+    font-family: 'Font Awesome 5 Brands', 'Font Awesome';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--font-title-color);
+    font-size: 1.6em;
+    opacity: 0.5;
+    transition: .3s ease;
+    -moz-transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    vertical-align: middle;
 }
 
 .portrait {
