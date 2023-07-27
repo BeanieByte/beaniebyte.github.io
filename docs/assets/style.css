@@ -269,8 +269,6 @@ footer i {
 .GoFast {
     width: 960px;
     height: 660px;
-    padding: 1em;
-
 }
 
 
@@ -278,5 +276,9 @@ footer i {
 
     .onlypc {
  display: none;
+    }
+
+    .GoFast iframe {
+        display: none;
     }
   }
