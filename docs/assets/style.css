@@ -273,12 +273,17 @@ footer i {
 
 
 @media only screen and (max-width: 1180px) {
+    
+    .GoFast iframe {
+        display: none;
+    }
+
+    .GoFast {
+        display: none;
+    }
 
     .onlypc {
  display: none;
     }
 
-    .GoFast iframe {
-        display: none;
-    }
   }
