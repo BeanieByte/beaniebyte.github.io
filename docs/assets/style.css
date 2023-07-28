@@ -273,6 +273,10 @@ footer i {
 
 
 @media only screen and (max-width: 1180px) {
+
+    main {
+        margin: 4rem 2rem 4rem 2rem;
+    }
     
     .GoFast iframe {
         display: none;
