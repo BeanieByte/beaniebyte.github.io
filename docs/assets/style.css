@@ -45,6 +45,8 @@ header {
     border-bottom: 0px solid  var(--bg-menu-link);
     width: 100%;
     max-width: 1920px;
+    position: sticky;
+    top: 0;
     display:flex;
     align-items: center;
     justify-content: space-around;
@@ -287,6 +289,16 @@ footer i {
     }
 
     .onlypc {
+ display: none;
+    }
+
+  }
+
+
+@media only screen and (min-width: 1181px) {
+
+
+    .onlySmallScreens {
  display: none;
     }
 
