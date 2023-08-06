@@ -101,7 +101,7 @@ h3 {
 }
 
 main {
-    margin: 8rem 2rem 4rem 2rem;
+    margin: 7rem 2rem 4rem 2rem;
     align-self: center;
     flex-grow: 1;
     max-width: 1000px; 
@@ -280,7 +280,7 @@ footer i {
 @media only screen and (max-width: 1180px) {
 
     main {
-        margin: 6rem 2rem 4rem 2rem;
+        margin: 4rem 2rem 4rem 2rem;
     }
     
     .GoFast iframe {
