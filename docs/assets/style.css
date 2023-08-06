@@ -101,7 +101,7 @@ h3 {
 }
 
 main {
-    margin: 7rem 2rem 4rem 2rem;
+    margin: 4rem 2rem 4rem 2rem;
     align-self: center;
     flex-grow: 1;
     max-width: 1000px; 
@@ -274,26 +274,29 @@ footer i {
 .GoFast {
     width: 960px;
     height: 660px;
-    z-index: -1;
+}
+
+.onlypc, .GoFast, .GoFast iframe {
+    display: none;
 }
 
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (min-width: 1180px) {
 
     main {
-        margin: 4rem 2rem 4rem 2rem;
+        margin: 7rem 2rem 4rem 2rem;
     }
     
     .GoFast iframe {
-        display: none;
+        display: initial;
     }
 
     .GoFast {
-        display: none;
+        display: initial;
     }
 
     .onlypc {
- display: none;
+ display: initial;
     }
 
   }
