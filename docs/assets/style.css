@@ -46,7 +46,7 @@ header {
     position: sticky;
     top: 0;
     height: 4.8em;
-    background-color: #0f0a1450;
+    background-color: #0f0a1462;
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
     z-index: 9999;
