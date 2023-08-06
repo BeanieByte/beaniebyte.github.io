@@ -272,6 +272,7 @@ footer i {
 .GoFast {
     width: 960px;
     height: 660px;
+    z-index: -1;
 }
 
 
