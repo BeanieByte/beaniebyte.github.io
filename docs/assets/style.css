@@ -43,7 +43,7 @@ body {
 
 header {
     border-bottom: 0px solid  var(--bg-menu-link);
-    width: 100vw;
+    width: 100%;
     position: sticky;
     top: 0;
     height: 4.8em;
@@ -104,7 +104,7 @@ main {
     margin: 8rem 2rem 4rem 2rem;
     align-self: center;
     flex-grow: 1;
-    max-width: 1000px;
+    max-width: 1000px; 
     /* margin: -8em 4em 0em 4em; */
     animation: fadeInAnimation ease 1.6s;
     animation-iteration-count: 1;
@@ -189,6 +189,7 @@ nav li a {
     font-size: 1rem;
   /*  background: var(--bg-menu-link);*/
     border-radius: .8rem; 
+    text-shadow: 0px 0px 18px rgba(26, 19, 36, 0.705);
     padding: .60rem 1rem .60rem 1rem;
     margin-right: 1rem;
 
