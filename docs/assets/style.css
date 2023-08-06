@@ -5,10 +5,10 @@
     --font-title-color: #dadae9;
     --font-body-color: #b0afbd;
     --link-color: #e49fb6;
-    --hover-color: #d0e1e6;
-    --font-footer-color: #6c6c7e;
+    --hover-color: #d0d1e6;
+    --font-footer-color: #86849b;
     --bg-menu-link: rgba(231, 234, 241, 0.15);
-    --bg-menu-hover: rgba(231, 234, 241, 0.589);
+    --bg-menu-hover: rgba(231, 234, 241, 0.082);
     --portrait-shadow: rgba(24, 23, 32, 0.2);
     --selection-bg: rgba(202, 195, 255, 0.411);
     --selection-text: #2d2c3f;
@@ -42,11 +42,11 @@ body {
 }
 
 header {
-    border-bottom: 0px solid  var(--bg-menu-link);
     width: 100%;
     position: sticky;
     top: 0;
     height: 4.8em;
+    background-color: #0f0a1450;
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
     z-index: 9999;
@@ -63,7 +63,7 @@ header {
 .logo img {
 width: 2.8em;
 height: 2.8em;
-opacity: 0.5;
+opacity: 0.6;
 -webkit-transition: .4s ease;
 -moz-transition: .4s ease;
 -o-transition: .4s ease;
@@ -186,18 +186,19 @@ nav li {
 }
 
 nav li a {
+    font-weight: 400;
     font-size: 1rem;
   /*  background: var(--bg-menu-link);*/
     border-radius: .8rem; 
     text-shadow: 0px 0px 18px rgba(26, 19, 36, 0.705);
     padding: .60rem 1rem .60rem 1rem;
-    margin-right: 1rem;
+    margin-right: 0.8rem;
 
 }
 
 nav li a:hover {
+    color: var(--font-body-color);
     background: var(--bg-menu-hover);
-    color: var(--bg-color2);
     transition: .3s ease;
     -moz-transition: .3s ease;
     -webkit-transition: .3s ease;
@@ -215,7 +216,7 @@ ul {
 
 footer {
     justify-self: flex-end;
-    color: var(--font-body-color);
+    color: var(--font-footer-color);
     font-size: 0.7em;
     font-weight: 600;
     vertical-align: middle;
@@ -247,7 +248,7 @@ footer i {
 
 .portrait {
     border-radius: 100px;
-    opacity: 0.8;
+    opacity: 0.9;
     width: 10em;
     height: 10em;
     box-shadow: 0px 0px 18px rgba(15, 12, 19, 0.205);
