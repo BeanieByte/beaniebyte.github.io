@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1396.42" height="1395" viewBox="0 0 1396.42 1395">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 140px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>Asset 5</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <path class="cls-1" d="M224,912.53V531.27C224,276.52,436.29,70,698.21,70h0c261.93,0,474.26,206.52,474.26,461.27V912.53"/>
+        <path class="cls-2" d="M1256.42,1000.5V1255H140V1000.5H1256.42m15.88-140H124.13A124.12,124.12,0,0,0,0,984.63v286.24A124.12,124.12,0,0,0,124.13,1395H1272.3a124.12,124.12,0,0,0,124.12-124.13V984.63A124.12,124.12,0,0,0,1272.3,860.5Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
