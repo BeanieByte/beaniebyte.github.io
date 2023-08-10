@@ -225,7 +225,7 @@ a:hover {
   .menu-button::before,
   .menu-button::after {
     display: block;
-    color: var(--font-body-color) !important;
+    color: #b0afbd !important;
     position: absolute;
     height: 2px;
     width: 22px;
