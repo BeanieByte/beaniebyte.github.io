@@ -207,7 +207,6 @@ a:hover {
 
   /*Container for menu button  */
   .menu-button-container {
-    opacity: 0.8;
     display: none;
     height: 100%;
     width: 30px;
@@ -226,7 +225,7 @@ a:hover {
   .menu-button::before,
   .menu-button::after {
     display: block;
-    background-color: #fff;
+    color: var(--font-body-color) !important;
     position: absolute;
     height: 2px;
     width: 22px;
