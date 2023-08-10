@@ -186,30 +186,128 @@ a:hover {
 
 /* menu/links */
 
-nav li {
+.menu li:hover{
+    color:white;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
-    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+
+  }
+
+
+  /*Container for menu button  */
+  .menu-button-container {
+    opacity: 0.8;
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  /*  Creating the menu button */
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 3px;
+    width: 28px;
+    border-radius: 1px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+
+  /*  Adding Functionality to the Hamburger Menu with CSS  */
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(45deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+  /*  transforms the hamburger icon into a cross  */
+    transform: rotate(-45deg);
+  }
+
+/* Making the navbar responsive by CSS Media Queries */
+@media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+    }
+
+
+
+.menu {
+      position: absolute;
+      top: 0;
+      margin-top: 4.8em;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      
 }
 
-nav li a {
-    font-weight: 400;
-    font-size: 0.9rem;
-  /*  background: var(--bg-menu-link);*/
-    border-radius: .8rem; 
-    text-shadow: 0px 0px 18px rgba(26, 19, 36, 0.445);
-    padding: .60rem 1rem .60rem 1rem;
-    margin-right: 0.2rem;
+#menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
 
+#menu-toggle:checked ~ .menu li {
+      height: 5em;
+    }
+
+.menu > li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      color: black;
+      background-color: #524f86;
+      -webkit-transition: .2s ease;
+      -moz-transition: .2s ease;
+      -o-transition: .2s ease;
+      transition: .2s ease;
+      
 }
-
-nav li a:hover {
-    color: var(--font-body-color);
-    background: var(--bg-menu-hover);
-    transition: .3s ease;
-    -moz-transition: .3s ease;
-    -webkit-transition: .3s ease;
-    -o-transition: .3s ease;
-    
+.menu > li:not(:last-child) {
+   
+    }
 }
 
 
