@@ -225,7 +225,7 @@ a:hover {
   .menu-button::before,
   .menu-button::after {
     display: block;
-    color: #b0afbd !important;
+    background-color: #b0afbd !important;
     position: absolute;
     height: 2px;
     width: 22px;
@@ -249,7 +249,7 @@ a:hover {
   }
   
   #menu-toggle:checked + .menu-button-container .menu-button {
-    background: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0) !important;
   }
   
   #menu-toggle:checked + .menu-button-container .menu-button::after {
